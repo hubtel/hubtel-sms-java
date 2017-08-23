@@ -1,16 +1,12 @@
-SMSGH HTTP API JAVA SDK (Release 2)
+Hubtel HTTP API JAVA SDK 
 ===================================
 
 ## **Overview**
-
-The SMSGH HTTP API JAVA SDK is a wrapper built to assist java-driven applications developers to interact in a more friendly way with the HTTP API.
-Its goal is also to provide an easy way for those who do not have much knowledge about the whole HTTP Restful technology to interact with the HTTP API.
-In that direction there is no need to go and grab a knowledge about HTTP and REST technology. 
-All one needs is to have the basic knowledge about the JAVA language. We mean the basics not advanced knowledge.
+This is an open source JAVA SDK that allows you to access the Hubtel [REST SMS API](https://developers.hubtel.com) from your application. You need to create a Hubtel account [here](https://unity.hubtel.com/) in order to use this API.
 
 ## **Notice**
-* This is the source code for the current release.
-* The source code of the previous release can be found [here](https://github.com/smsgh/smsghapi-java/tree/release-1) .
+* This is the source code for the Hubtel release.
+* The source code of the previous release can be found [here](https://github.com/hubtel/smsghapi-csharp-legacy) .
 
 ## **Installation**
 
@@ -34,7 +30,7 @@ The SDK currently is organized around four main classes:
 * *ContentApi.java* : 
         It handles all content related tasks.
 
-## **Some Quick Start**
+## **Examples**
 
 * **How to Send a Message**
 
