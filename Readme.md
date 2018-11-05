@@ -95,8 +95,8 @@ To schedule a message just copy this code snippet and do the necessary modificat
                 // Here we will send the message next week
                 Message message = new Message();
                 message.setContent("Hello Arsene...");
-                message.setFrom("Arsene");
-                message.setTo("+233247063817");
+                message.setFrom("John Doe");
+                message.setTo("+233547075818");
                 message.setRegisteredDelivery(true);
                 message.setBillingInfo("123");
 
