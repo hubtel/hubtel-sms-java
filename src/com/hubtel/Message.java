@@ -55,7 +55,7 @@ public class Message {
                     this.content = val.asString();
                     break;
                 case "direction":
-                    this.content = val.asString();
+                    this.direction = val.asString();
                     break;
                 case "flashmessage":
                     this.flashMessage = val.asBoolean();
