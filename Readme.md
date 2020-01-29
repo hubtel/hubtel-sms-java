@@ -56,7 +56,7 @@ To send a message just copy this code snippet and do the necessary modifications
             MessagingApi messagingApi = new MessagingApi(host);
 
             try {
-                MessageResponse response = messagingApi.sendQuickMessage("+233245657867", "+233245098456", "Hello THe JAVA SDK R2 Test is ongoing... ", "123");
+                MessageResponse response = messagingApi.sendQuickMessage("+233245657867", "+233245098456", "Hello THe JAVA SDK R2 Test is ongoing... ", "123",true);
 
                 System.out.println("Server Response Status " + response.getStatus());
             } catch (HttpRequestException ex) {
