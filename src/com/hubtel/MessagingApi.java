@@ -56,10 +56,11 @@ public class MessagingApi extends AbstractApi {
      * not exist. To be sure of that just check whether there is an exception
      * thrown
      */
-    public MessageResponse sendQuickMessage(String from, String to, String content, String billingInfo) throws HttpRequestException {
+    public MessageResponse sendQuickMessage(String from, String to, String content, String billingInfo,boolean registeredDelivery) throws HttpRequestException {
         Message mesg = new Message();
         mesg.setFrom(from).setTo(to).setContent(content);
         mesg.setBillingInfo(billingInfo);
+        mesg.setRegisteredDelivery(registeredDelivery);
         return sendMessage(mesg);
     }
 

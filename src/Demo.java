@@ -23,7 +23,7 @@ public class Demo {
         MessagingApi messagingApi = new MessagingApi(host);
 
         try {
-        	MessageResponse response = messagingApi.sendQuickMessage("DevUniverse", "+233207110652", "Welcome to planet Hubtel!", "123");
+        	MessageResponse response = messagingApi.sendQuickMessage("DevUniverse", "+233207110652", "Welcome to planet Hubtel!", "123",true);
 
             System.out.println("Server " + response.getMessageId());
         } catch (HttpRequestException ex) {
