@@ -21,7 +21,7 @@ public class ApiHost {
      *
      */
     public ApiHost() {
-        this.hostname = "api.hubtel.com";
+        this.hostname = "smsc.hubtel.com";
         this.iAuth = null;
         this.consoleLogEnabled = false;
         this.contextPath = "v1";
