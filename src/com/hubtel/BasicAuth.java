@@ -4,7 +4,7 @@
  */
 package com.hubtel;
 
-import jakarta.xml.bind.DatatypeConverter;
+import javax.xml.bind.DatatypeConverter;
 
 /**
  * @author Arsene Tochemey GANDOTE
