@@ -20,8 +20,8 @@ public class ApiHost {
     /**
      *
      */
-    public ApiHost() {
-        this.hostname = "smsc.hubtel.com";
+    public ApiHost(String apiType) {
+        this.hostname = apiType == ApiTypes.PRODUCER ?  "api.hubtel.com" : "smsc.hubtel.com";
         this.iAuth = null;
         this.consoleLogEnabled = false;
         this.contextPath = "v1";
@@ -32,10 +32,16 @@ public class ApiHost {
 
 
     public ApiHost(IAuth iauth) {
-        this();
+        this(ApiTypes.CONSUMER);
         this.iAuth = iauth;
     }    
 
+    public ApiHost(IAuth iauth, String apiType) {
+        this(apiType);
+        this.iAuth = iauth;
+    }    
+
+    
     /**
      * @return the authorization
      */
